@@ -1,4 +1,5 @@
 # AsianFood EmojiPedia Project
+![Test Image 4](https://github.com/miya-w/React-Projects/blob/main/02-asianfood-emoji-pedia/imgs/image01.png)
 ### What will you learn in the first React project?
 
 1. Waht is **props** ?
@@ -12,7 +13,7 @@ According to [ReactJS Props - javatpoint] (https://www.javatpoint.com/react-prop
 ### [example] (https://www.w3schools.com/react/react_props.asp)
 
 >function Car(props) {
-  return <h2>I am a { props.brand }!</h2>;
+  return < h2>I am a { props.brand }!< /h2>;
 }
 
 > const myelement = <Car brand="Ford" />;

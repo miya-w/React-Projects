@@ -1,4 +1,5 @@
 # Hello React Project!
+![Test Image 4](https://github.com/miya-w/React-Projects/blob/main/01-hello-world/imgs/helloReact.png)
 ### What will you learn in the first React project?
 
 1. What is React 
@@ -33,7 +34,7 @@ ReactDOM.render(<Welcome />, document.getElementById('root'));
 - wrap them inside a div. <div></div>
 - We wanted to insert JavaScript code inside the HTML inside the 
 - JavaScript file then what we have to do is simply wrap the JavaScript inside a set of curly braces. { }
-> ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root")
+> ReactDOM.render(< h1 >Hello World!< /h1 >, document.getElementById("root")
 );
 
 ---
