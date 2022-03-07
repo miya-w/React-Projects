@@ -1,5 +1,6 @@
 # Hello React Project!
 ![Test Image 4](https://github.com/miya-w/React-Projects/blob/main/01-hello-world/imgs/helloReact.png)
+---
 ### What will you learn in the first React project?
 
 1. What is React 
@@ -23,7 +24,7 @@
 5. Components
  - React components are JavaScript functions.
 > function Welcome() {
-    return <h1>Hello React!</h1>;
+    return < h1>Hello React!< /h1>;
 }
 ReactDOM.render(<Welcome />, document.getElementById('root'));
 

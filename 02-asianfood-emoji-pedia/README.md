@@ -1,5 +1,6 @@
 # AsianFood EmojiPedia Project
 ![Test Image 4](https://github.com/miya-w/React-Projects/blob/main/02-asianfood-emoji-pedia/imgs/image01.png)
+---
 ### What will you learn in the first React project?
 
 1. Waht is **props** ?
