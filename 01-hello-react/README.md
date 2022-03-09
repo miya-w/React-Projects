@@ -1,5 +1,5 @@
 # Hello React Project!
-![Test Image 4](https://github.com/miya-w/React-Projects/blob/main/01-hello-world/imgs/helloReact.png)
+![Test Image 4](https://github.com/miya-w/React-Projects/blob/main/01-hello-react/imgs/helloReact.png)
 ---
 ### What will you learn in the first React project?
 
@@ -26,7 +26,7 @@
 > function Welcome() {
     return < h1>Hello React!< /h1>;
 }
-ReactDOM.render(<Welcome />, document.getElementById('root'));
+(<Welcome />, document.getElementById('root'));
 
 6. React DOM Render
 - ReactDOM.render(What to show,Where to show it);

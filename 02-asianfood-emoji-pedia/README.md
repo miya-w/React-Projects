@@ -27,7 +27,7 @@ According to [ReactJS Props - javatpoint] (https://www.javatpoint.com/react-prop
 **javascript ⇒ Array.prototype.map()**
 
 - The `map()` method creates a new array populated with the results of calling a provided function on every element in the calling array.
->//map
+**map( ) method**
 const numbers = [1, 2, 3, 4, 5];
 const numberMap = numbers.map((number) => number );
 console.log(numberMap);
