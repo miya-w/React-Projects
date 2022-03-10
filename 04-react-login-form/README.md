@@ -1,5 +1,5 @@
 # React Count App Project
-![count-app](https://github.com/miya-w/React-Projects/blob/main/04-react-count-app/imgs/count-app.png)
+![count-app](https://github.com/miya-w/React-Projects/blob/main/04-react-login-form/imgs/count-app.png)
 ---
 **What will you learn in the first React project?**
 - React **Conditional Rendering** with the Ternary Operator & AND Operator
