@@ -3,15 +3,15 @@
 ---
 **What will you learn in the first React project?**
 - React **Conditional Rendering** with the Ternary Operator & AND Operator
-- example: {isLoggedIn === true ? <h1>Hello</h1> : <Login />}
+- example: {isLoggedIn === true ? < h1>Hello< /h1> : < Login />}
 
 ** The Tradional JS way:
 >// var isLoggedIn = false;
 >var isLoggedIn = true;
 
 >function renderConditionally(){
-  if(isLoggedIn === true){
-    return  <h1>Hello</h1>
+  if (isLoggedIn === true){
+    return  < h1>Hello< /h1>
   }else {
     return(
     < form className="form">

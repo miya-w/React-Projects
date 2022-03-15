@@ -50,6 +50,7 @@ if we choose not to use the React HookStste, instead, we use the trational JS wa
 
 Well this is where hooks come in. And there's a hook code useState that is perfect for this situation.
 
+
 ---
 ### Getting Started with Create React App
 
