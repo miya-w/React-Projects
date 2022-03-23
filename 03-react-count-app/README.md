@@ -1,7 +1,7 @@
 # React Count App Project
 ![count-app](https://github.com/miya-w/React-Projects/blob/main/03-react-count-app/imgs/count-app.png)
 ---
-**What will you learn in the first React project?**
+**What will you learn in this React project?**
 1. What is React Hooks - **useState**?
 - The state comes from this useState hook and this function comes from the React module.
 - One of the rules for using hooks is that you must use a hook inside a functional component.

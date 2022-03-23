@@ -1,11 +1,12 @@
-# React todo-list Project
+# React shopping-list Project
 ![shopping-list](https://github.com/miya-w/React-Projects/blob/main/06-react-shopping-list/imgs/shoppinglist01.png)
 ---
 **What will you learn in this React project?**
 CRUD -> Create, Read, Update, Delete
 ### 1.reate & Read
 - complex state & Javascript ES6 Spread Operator
-` function addItems(){
+
+  ` function addItems(){
     setItems(prevItems => {
       // Javascript ES6 Spread Operator
       return [...prevItems, inputText];

@@ -21,6 +21,7 @@ function App(){
     </h1>
     <dl className="dictionary">
     {/* //map function  */}
+    {/*//emojiTerm -> means each emojiPedia object in array */}
     {emojipedia.map(emojiTerm => (
           <Cards
             key={emojiTerm.id}
