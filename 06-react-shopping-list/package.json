@@ -1,6 +1,7 @@
 {
   "name": "05-react-to-do-list",
   "version": "0.1.0",
+  "homepage":"https://github.com/miya-w/React-Projects/06-react-shopping-list",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -12,6 +13,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
