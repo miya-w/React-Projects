@@ -5,12 +5,13 @@
 1. What is React Hooks - **useState**?
 - The state comes from this useState hook and this function comes from the React module.
 - One of the rules for using hooks is that you must use a hook inside a functional component.
->import React, { useState } from "react";
->const [count, setCount] = useState(0);
-
+```javascript
+import React, { useState } from "react";
+const [count, setCount] = useState(0);
+```
 So, what is exactly the **state**? Let's wrap the "useState()" in a const then "console.log(state)" 
 
-```
+```javascript
 const state = useState();
 consoe.log(state) 
 ```
@@ -45,7 +46,7 @@ ReactDOM.render(
  }
 
 ```
-```
+```javascript
  ReactDOM.render(
   < div className="container">
     < h1>{count}< /h1>
@@ -56,6 +57,28 @@ ReactDOM.render(
 ```
 Well this is where hooks come in. And there's a hook code useState that is perfect for this situation.
 
+``` javascript
+import React, { useState } from "react";
+function App() {
+  const [count, setCount] = useState(0);
+   function increase() {
+    setCount(count + 1);
+    
+    }
+    function decrease() {
+    setCount(count - 1);
+    return (
+    <div className="container">
+      <h1>{count}</h1>
+      <button onClick={increase}> + </button>
+      <button onClick={decrease}> - </button>
+    </div>
+  );
+  }
+
+}
+export default App;
+```
 
 ---
 ### Getting Started with Create React App
