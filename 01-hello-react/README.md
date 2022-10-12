@@ -1,5 +1,6 @@
 # Hello React Project!
 ![Test Image 4](https://github.com/miya-w/React-Projects/blob/main/01-hello-react/imgs/helloReact.png)
+![rendering](https://github.com/miya-w/React-Projects/blob/main/01-hello-react/imgs/react-rendering.png)
 ---
 ### What will you learn in the first React project?
 

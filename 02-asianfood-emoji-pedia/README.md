@@ -13,17 +13,17 @@ According to [ReactJS Props - javatpoint] (https://www.javatpoint.com/react-prop
 
 ### [example] (https://www.w3schools.com/react/react_props.asp)
 - The component receives the argument as a props object:
-`
+```
 function Car(props) {
   return < h2>I am a { props.brand }!< /h2>;
 }
-`
-`
+```
+```
 ​const myelement = < Car brand="Ford" />;
 ReactDOM.render(myelement, document.getElementById('root'));
 // Print: I am a Ford!
-`
-` 
+```
+
 ---
 ### 2. Mapping Data to Components
 **javascript ⇒ Array.prototype.map()**
@@ -32,19 +32,19 @@ ReactDOM.render(myelement, document.getElementById('root'));
 ---
 **map( ) method**
 
-`
-`
-`const numbers = [1, 2, 3, 4, 5];`
-`const numberMap = numbers.map((number) => number );`
-`console.log(numberMap);`
-`
+```
+const numbers = [1, 2, 3, 4, 5];`
+const numberMap = numbers.map((number) => number );
+console.log(numberMap);`
+```
 //print : 2.a30c0c16.chunk.js:1 (5) [1, 2, 3, 4, 5]
-`
+
 
 
 
 ---
 # Getting Started with React App
+```
 - npm start
     Starts the development server.
 
@@ -53,4 +53,4 @@ ReactDOM.render(myelement, document.getElementById('root'));
 
 - npm test
     Starts the test runner.
-
+```
