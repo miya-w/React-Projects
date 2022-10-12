@@ -3,7 +3,7 @@
 ---
 **What will you learn in this React project?**
 CRUD -> Create, Read, Update, Delete
-### 1.reate & Read
+## 1.reate & Read
 - complex state & Javascript ES6 Spread Operator
 
   ` function addItems(){
@@ -16,13 +16,13 @@ CRUD -> Create, Read, Update, Delete
   }`
 
 ---
-### 2.map() method & arrow function
+## 2.map() method & arrow function
 `{items.map(todoItem =>{return<li>{todoItem}</li>})}`
 map() method
 arrow function
 [Arrow function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-### 3.Delete function
+## 3.Delete function
 `
  {items.map((todoItem, index)=> (            
           < ToDoItem key = {index} id={index} text={todoItem} onChecked={deleteItem()}/>)
