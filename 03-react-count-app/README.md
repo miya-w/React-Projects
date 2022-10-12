@@ -3,8 +3,9 @@
 ---
 **What will you learn in this React project?**
 1. What is React Hooks - **useState**?
-- The state comes from this useState hook and this function comes from the React module.
+- The state comes from this useState hook and this function comes from the **React module**.
 - One of the rules for using hooks is that you must use a hook inside a functional component.
+
 ```javascript
 import React, { useState } from "react";
 const [count, setCount] = useState(0);
@@ -89,3 +90,5 @@ npm run - build Bundles the app into static files for production.
 
 npm test - Starts the test runner.
 ```
+Resources
+---
