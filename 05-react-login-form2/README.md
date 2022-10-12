@@ -26,9 +26,9 @@ from : [stakeoverflow](https://stackoverflow.com/questions/42522515/what-are-rea
 ## 2.event.target.value.
 We can get the value of an element using the .value property in its HTMLElement instance. You can also use the .value property to set values in the form elements.
 
-** event.target** gives you the element that triggered the event.
+**event.target** gives you the element that triggered the event.
 
-So, event.target.value retrieves the value of that element (an input field, in your example).
+So, **event.target.value** retrieves the value of that element (an input field, in your example).
 
 In React, events are SynthenticEvent, a wrapper around the browser’s native event. It has the same interface as the browser’s native event, including stopPropagation() and preventDefault(), except the events work identically across all browsers.
 [stakeoverflow](https://stackoverflow.com/questions/67014481/what-is-event-target-value-in-react-exactly)
@@ -39,13 +39,13 @@ In React, events are SynthenticEvent, a wrapper around the browser’s native ev
 - SyntheticEvent is a wrapper that forms part of React’s Event System.
 
 ### Getting Started with Create React App
-
+```
 npm start -  Starts the development server.
 
 npm run - build Bundles the app into static files for production.
 
 npm test - Starts the test runner.
-
+```
 ----
 ``` {
 // Controlled:
