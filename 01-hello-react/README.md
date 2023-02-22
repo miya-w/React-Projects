@@ -6,8 +6,18 @@
 
 ## 1. What is React 
 - React is a JavaScript library created by Facebook
-- React is a User Interface UI library
+- React is a User Interface UI library (view layers of MVC framework)
 - React is a tool for building UI components
+
+### Create a New React App
+
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+- [Create a New React App](https://reactjs.org/docs/create-a-new-react-app.html)
 
 ## 2. What is Babel?
 - Babel is a JavaScript compiler that can translate markup or programming languages into JavaScript. React uses Babel to convert JSX into JavaScript.
@@ -17,13 +27,15 @@
 ## 3. JSX
 - JSX stands for JavaScript XML.
 - JSX is an XML/HTML like extension to JavaScript.
-- Expressions can be used in JSX by wrapping them in curly {} braces.
+- Expressions can be used in JSX by wrapping them in curly { } braces.
+- Whenever you use a self-closing tag in JSX, you **must** end it with a `/`, like `<Hello />`
 
 ## 4. Element
 - React applications are usually built around a single HTML element. Also know as root node or root element.
 
 ## 5. Components
  - React components are JavaScript functions.
+ - Components encapsulating code and modularizing data
 ```
 function Welcome() {
     return < h1>Hello React!< /h1>;
@@ -46,12 +58,40 @@ function Welcome() {
 ### Getting Started with React App
 
 ```
+# Create the React App
+- npx create-react-app my-app
+
+# Create the React App in current directory
+- npx create-react-app .
+
+# Starts the development server.
 - npm start
-    Starts the development server.
 
+# Bundles the app into static files for production.
 - npm run build
-    Bundles the app into static files for production.
 
+# Starts the test runner.
 - npm test
-    Starts the test runner.
+   
+  cd my-app
+  npm start
 ```
+
+## the React Directory
+
+```
+├── README.md
+├── package.json
+├── public
+│   ├── favicon.ico
+│   └── index.html
+└── src
+    ├── App.css
+    ├── App.js
+    ├── App.test.js
+    ├── index.css
+    ├── index.js
+    └── logo.svg
+```
+
+Most of the important files are in the `src` directory. Specifically, we’ll be using `src/App.js` and `src/index.js`.

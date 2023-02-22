@@ -23,5 +23,5 @@
 #ReactForm #controlledComponent #StateInForm #event.target.value. #SyntheticEvent 
 
 ## 6. Shopping list [roject Link](https://github.com/miya-w/React-Projects/tree/main/06-react-shopping-list)
-![shopping-list](https://github.com/miya-w/React-Projects/blob/main/06-react-shopping-list/imgs/shoppinglist01.png)
+![shopping-list](https://github.com/miya-w/React-Projects/blob/main/06-react-shopping-list/imgs/shoppinglist02.png)
 #CRUD 
