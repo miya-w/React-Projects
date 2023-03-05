@@ -1,6 +1,6 @@
 # React-Projects
 ---
-**This is a React project repository record the learning journey of React step by step.**
+**This repository record the learning journey of React step by step.**
 
 ## 1. Hello React project[Project Link](https://github.com/miya-w/React-Projects/tree/main/01-hello-react)
 

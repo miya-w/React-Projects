@@ -29,7 +29,19 @@ npm start
 - JSX is an XML/HTML like extension to JavaScript.
 - Expressions can be used in JSX by wrapping them in curly { } braces.
 - Whenever you use a self-closing tag in JSX, you **must** end it with a `/`, like `<Hello />`
-
+- ES6 template literals:
+```javascript
+const fName = Mia;
+const lName = Will
+ReactDOM.render(
+<div>
+<h1>Hello {`${fName} ${lName}`}</h1>
+<h1>Hello {fName + " "+lName}</h1>
+<p>Your Lucky number is {3+4}</p>
+</div>,
+document.getElementById("root")
+)
+```
 ## 4. Element
 - React applications are usually built around a single HTML element. Also know as root node or root element.
 
@@ -95,3 +107,11 @@ function Welcome() {
 ```
 
 Most of the important files are in the `src` directory. Specifically, we’ll be using `src/App.js` and `src/index.js`.
+
+
+### When to use js or jsx file in React?
+In React, JavaScript (JS) files are used to write the logic and functionality of components, while JSX files are used to define the structure and appearance of components.
+
+JSX is a syntax extension of JavaScript that allows you to write HTML-like code in your JavaScript files. It is used to create and render components in React. JSX code is transformed into regular JavaScript code using a transpiler such as Babel, which allows it to be executed in the browser.
+
+JS files, on the other hand, contain the logic and functionality of your React components. This includes functions and methods for handling user input, fetching data from APIs, and updating component state.
