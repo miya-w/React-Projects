@@ -9,7 +9,7 @@ function Footer(){
 
 return(
  <div>
-     <p>Created by {fname }{lName}</p>
+     <p>Created by {fname +" "+lName}</p>
     <p>Copyright @{year}</p>
  </div>
    

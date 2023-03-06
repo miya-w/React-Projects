@@ -115,3 +115,18 @@ In React, JavaScript (JS) files are used to write the logic and functionality of
 JSX is a syntax extension of JavaScript that allows you to write HTML-like code in your JavaScript files. It is used to create and render components in React. JSX code is transformed into regular JavaScript code using a transpiler such as Babel, which allows it to be executed in the browser.
 
 JS files, on the other hand, contain the logic and functionality of your React components. This includes functions and methods for handling user input, fetching data from APIs, and updating component state.
+
+### Function component template
+```javascript
+import React from "react";
+function TheFunctionName(){
+	
+return(
+ <div>
+    
+ </div>
+   
+)
+}
+export default TheFunctionName;
+```

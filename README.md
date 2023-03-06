@@ -25,3 +25,12 @@
 ## 6. Shopping list [roject Link](https://github.com/miya-w/React-Projects/tree/main/06-react-shopping-list)
 ![shopping-list](https://github.com/miya-w/React-Projects/blob/main/06-react-shopping-list/imgs/shoppinglist02.png)
 #CRUD 
+
+
+## Resources
+- [CheatSheet -JsES6](https://github.com/miya-w/React-Projects/tree/main/javascript-eS6)
+- [React-Doc-Introducing JSX](https://reactjs.org/docs/introducing-jsx.html)
+- [Component](https://beta.reactjs.org/reference/react/Component)
+- [JavaScript | 關於 Object ，一口氣全說完](https://medium.com/enjoy-life-enjoy-coding/javascript-%E9%97%9C%E6%96%BC-object-%E4%B8%80%E5%8F%A3%E6%B0%A3%E5%85%A8%E8%AA%AA%E5%AE%8C-4bb924bcc79f)
+- [你懂 JavaScript 嗎？#17 物件（Object）](https://www.cythilya.tw/2018/10/24/object/)
+- [MDN-JavaScript 物件基礎概念](https://developer.mozilla.org/zh-TW/docs/Learn/JavaScript/Objects/Basics)
