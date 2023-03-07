@@ -107,7 +107,7 @@ document.getElementById("demo").innerHTML = year;
 ```
 
 
-## Destructuring 
+## Array & Object Destructuring 
 - The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 ### Dustructue Array
@@ -133,6 +133,17 @@ console.log(vehicles)// ▶(3) ["mustang", "f-150", "expedition"]
 console.log(car); // mustang
 
 ```
+```javascript
+// example 2: the array will match the value by order 
+const animal = ["cat", "dog", "cow"];
+const [meow, bark] = animal;
+console.log(animal); //3) ["cat", "dog", "cow"]
+console.log(meow); // cat
+console.log(bark); //dog
+
+```
+
+
 ```javascript
 // If we only want the car and suv we can simply leave out the truck but keep the comma:
 const vehicles = ['mustang', 'f-150', 'expedition'];
@@ -273,7 +284,6 @@ numbers.forEach(function(num) {
 ```
 
 ## JavaScript Class
-
 
 Class Syntax
 - Use the keyword class to create a class.
