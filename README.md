@@ -35,3 +35,5 @@
 - [你懂 JavaScript 嗎？#17 物件（Object）](https://www.cythilya.tw/2018/10/24/object/)
 - [MDN-JavaScript 物件基礎概念](https://developer.mozilla.org/zh-TW/docs/Learn/JavaScript/Objects/Basics)
 - [CodeSandBox-Angela Yu React tutoria](https://codesandbox.io/s/imhql?file=/src/components/App.jsx)
+- [All Lifecycles in Class Components (Stateful) and Similar in Functional Components (Stateless) With Practical Tips in React JS](https://medium.com/swlh/all-lifecycles-in-class-components-stateful-and-similar-in-functional-components-stateless-c88564e42f24)
+- [Working with React Hooks: How to build a slider](https://dev.to/ugwutotheeshoes/working-with-react-hooks-how-to-build-a-slider-4f24)
