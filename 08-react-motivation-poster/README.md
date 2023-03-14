@@ -13,6 +13,20 @@ const App = () => {
 }
 ```
 
+```javascript
+//function component using object destructuring to parse props and explicit return
+const MotivationalPoster = ({ imageURL, altText, title, message }) => {
+  return (
+    <div className="MotivationalPoster">
+      <img src={imageURL} alt={altText} />
+      <h1>{title.toUpperCase()}</h1>
+      <p>{message}</p>
+    </div>
+  )
+}
+export default MotivationalPoster
+```
+
 
 ## Resources
 - [How to click on an image to display more information in React](https://medium.com/@nsteadman/how-to-click-on-an-image-to-display-more-information-in-react-e1ac73113d95)
