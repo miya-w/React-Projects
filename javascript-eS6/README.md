@@ -107,7 +107,7 @@ document.getElementById("demo").innerHTML = year;
 ```
 
 
-## Array & Object Destructuring 
+# Array & Object Destructuring 
 - The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.
 
 ### Dustructue Array
@@ -231,6 +231,21 @@ So I'm going to set these as the names of the first item and the second item fro
 
 If I decide to log the value of cat, you can see it is just a single object with two properties.
 So I've freed it from the array effectively. 
+
+```javascript
+const { name, sound } = cat;
+console.log(sound);
+```
+When you destructure an object, **these names that are going inside here have to match** with the property names of that object.
+
+```javascript
+// replace the name in the object
+const { name: catName, sound: catSound } = cat;
+```
+This is a way of providing an alternative name for the properties that come from an object. And this is really useful especially when your getting hold of data from public APIs where you didn't
+really get the chance to name the properties inside those JSONs.
+
+
 
 ## Javascript Map/Filter/Reduce
 ```javascript
