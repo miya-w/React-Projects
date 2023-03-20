@@ -234,9 +234,9 @@ So I've freed it from the array effectively.
 
 ```javascript
 const { name, sound } = cat;
-console.log(sound);
+console.log(sound);//meow
 ```
-When you destructure an object, **these names that are going inside here have to match** with the property names of that object.
+**When you destructure an object**, **these names that are going inside here have to match** with the property names of that object.
 
 ```javascript
 // replace the name in the object
@@ -244,6 +244,59 @@ const { name: catName, sound: catSound } = cat;
 ```
 This is a way of providing an alternative name for the properties that come from an object. And this is really useful especially when your getting hold of data from public APIs where you didn't
 really get the chance to name the properties inside those JSONs.
+
+```javascript
+const cars = [
+  {
+    model: "Honda Civic",
+    //The top colour refers to the first item in the array below:
+    //i.e. hondaTopColour = "black"
+    coloursByPopularity: ["black", "silver"],
+    speedStats: {
+      topSpeed: 140,
+      zeroToSixty: 8.5
+    }
+  },
+  {
+    model: "Tesla Model 3",
+    coloursByPopularity: ["red", "white"],
+    speedStats: {
+      topSpeed: 150,
+      zeroToSixty: 3.2
+    }
+  }
+];
+
+
+console.log(cars);
+const [honda, tesla] = cars;
+const {speedStats: { topSpeed: hondaTopSpeed }} = honda;
+const {speedStats: { topSpeed: teslaTopSpeed }} = tesla;
+const {coloursByPopularity: [hondaTopColour, hondaTopColour2]} = honda;
+const {coloursByPopularity: [teslaTopColour]} = tesla;
+ReactDOM.render(
+  <table>
+    <tr>
+      <th>Brand</th>
+      <th>Top Speed</th>
+    </tr>
+    <tr>
+      <td>{tesla.model}</td>
+      <td>{teslaTopSpeed}</td>
+      <td>{teslaTopColour}</td>
+    </tr>
+    <tr>
+      <td>{honda.model}</td>
+      <td>{hondaTopSpeed}</td>
+      <td>{hondaTopColour}</td>
+      <td>{hondaTopColour2}</td>
+    </tr>
+  </table>,
+  document.getElementById("root")
+);
+
+
+```
 
 
 

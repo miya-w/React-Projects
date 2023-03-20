@@ -38,6 +38,28 @@ In React, events are SynthenticEvent, a wrapper around the browser’s native ev
 ( React documents )[https://reactjs.org/docs/events.html]
 - SyntheticEvent is a wrapper that forms part of React’s Event System.
 
+
+## What is complex State?
+- In React, the term "complex state" typically refers to state objects that contain multiple properties or nested data structures, rather than simple primitive values like strings or numbers.
+```javascript
+  const [fullName, setFullName] = useState({
+    fName: " ",
+    lName: " "
+  });
+```
+
+```javascript
+const { value, name } = event.target;
+// const { value, name } = event.target; equal to the the code below
+const value = event.target.value;
+const name = event.target.name;
+```
+The code const { value, name } = event.target; is using destructuring assignment to extract the value and name properties from the target property of an event object.
+
+Destructuring is a way to extract values from arrays or objects and assign them to variables in a more concise and readable way.
+
+In this specific case, the code is using object destructuring to extract two properties, value and name, from the event.target object. By enclosing value and name in curly braces {} on the left-hand side of the assignment operator =, we are telling JavaScript to create two new variables, value and name, and assign them the values of the value and name properties of the event.target object, respectively. The value and name variables are now available for use in the rest of the code block.
+
 ### Getting Started with Create React App
 ```
 npm start -  Starts the development server.

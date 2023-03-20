@@ -23,6 +23,7 @@ The first item seems to be undefined and the second item is some sort of functio
   *(2) [undefined, ƒ bound dispatchAction()]*
     1. 0: undefined
     2. ▶  1: *ƒ bound dispatchAction() {}*
+        ▶<constructor>: "Function"
 ```
 So given that we know that this useState function outputs an array with a value:**AKA:initialState** and a function,
 
