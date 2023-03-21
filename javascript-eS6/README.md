@@ -232,7 +232,7 @@ So I'm going to set these as the names of the first item and the second item fro
 If I decide to log the value of cat, you can see it is just a single object with two properties.
 So I've freed it from the array effectively. 
 
-```javascript
+```javascript-
 const { name, sound } = cat;
 console.log(sound);//meow
 ```
@@ -298,6 +298,50 @@ ReactDOM.render(
 
 ```
 
+```javascript
+// 一個帶有非常多資料的物件
+const product = {
+  name: 'iPhone',
+  image: 'https://i.imgur.com/b3qRKiI.jpg',
+  description:
+    '全面創新的三相機系統，身懷萬千本領，卻簡練易用。電池續航力突飛猛進，前所未見。令你大為驚豔的晶片更加碼機器學習技術，並突破智慧型手機所能成就的極限。第一部威力強大，Pro 如其名的 iPhone，全新登場。',
+  brand: {
+    name: 'Apple',
+  },
+  aggregateRating: {
+    ratingValue: '4.6',
+    reviewCount: '120',
+  },
+  offers: {
+    priceCurrency: 'TWD',
+    price: '26,900',
+  },
+};
+
+/* 一般從物件取出屬性值，並建立新變數的做法 */
+const name = product.name;
+const description = product.description;
+/* 物件的解構賦值 */
+
+// 自動產生名為 name 和 description 的變數
+// 並把 product 物件內的 name 和 description 當作變數的值
+const { name, description } = product;
+
+console.log(name);         // iPhone
+console.log(description);  // 全面創新的三相機系統，身懷萬千本領，卻簡練易用。...
+```
+```javascript
+   // const { value, name } = event.target;
+    const newValue = event.target.value;
+    const inputName = event.target.name;
+
+```
+
+
+## Resources
+- [React 中一定會用到的 JavaScript 語法](https://ithelp.ithome.com.tw/articles/10217085)
+- [[ES6] 解構 & 字串模組學習心得](https://medium.com/vita-for-one/es6-%E8%A7%A3%E6%A7%8B-%E5%AD%97%E4%B8%B2%E6%A8%A1%E7%B5%84%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97-4f6b932a605e)
+
 
 
 ## Javascript Map/Filter/Reduce
@@ -350,6 +394,8 @@ numbers.forEach(function(num) {
 //   newNumber += currentNumber
 // })
 ```
+
+
 
 ## JavaScript Class
 

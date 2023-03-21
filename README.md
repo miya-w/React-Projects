@@ -38,9 +38,10 @@
 - [All Lifecycles in Class Components (Stateful) and Similar in Functional Components (Stateless) With Practical Tips in React JS](https://medium.com/swlh/all-lifecycles-in-class-components-stateful-and-similar-in-functional-components-stateless-c88564e42f24)
 - [Working with React Hooks: How to build a slider](https://dev.to/ugwutotheeshoes/working-with-react-hooks-how-to-build-a-slider-4f24)
 
-- Array & Object  destructure
+- **Array & Object  destructure**
 - [[ES6] 解構 & 字串模組學習心得](https://medium.com/vita-for-one/es6-%E8%A7%A3%E6%A7%8B-%E5%AD%97%E4%B8%B2%E6%A8%A1%E7%B5%84%E5%AD%B8%E7%BF%92%E5%BF%83%E5%BE%97-4f6b932a605e)
-- useEffect()
+
+- **useEffect()**
 - [[Day 17 - 即時天氣] 頁面載入時就去請求資料 - useEffect 的基本使用](https://ithelp.ithome.com.tw/articles/10224270)
 - [[week 21] React Hooks API：useEffect & 實作一個自己的鉤子](https://hackmd.io/@Heidi-Liu/note-fe302-hooks-useeffect)
 - [? 【React.js入門 - 20】 useEffect - 在function component用生命週期](https://ithelp.ithome.com.tw/articles/10223344)
