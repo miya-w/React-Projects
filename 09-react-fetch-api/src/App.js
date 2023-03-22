@@ -1,12 +1,17 @@
-import { useState } from "react";
+// import { useState } from "react";
+import { useEffect, useState } from 'react'
 
 // const APIKey = "3917f3a764d0394f234b9a09d3463ef4";
 // https://api.openweathermap.org/data/2.5/weather?q=melbourne&units=metric&appid=3917f3a764d0394f234b9a09d3463ef4
 
+console.log(process.env)
 const API = {
     base:"https://api.openweathermap.org/data/2.5/weather?",
     Key:"3917f3a764d0394f234b9a09d3463ef4"
+    // APIKey : process.env.REACT_APP_OPEN_WEATHER_API_KEY
 }  
+
+
 
 function App() {
   const [description, setDescription] = useState();
@@ -17,7 +22,18 @@ function App() {
   const fetchWeather = () => {
     const url = `${API.base}q=${location}&units=metric&appid=${API.Key}`;
     // const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${APIKey}`;
-    fetch(url)
+    // useEffect(() => {
+    //   async function fetchData() {
+    //     const response = await fetch(url);
+    //     const json = await response.json();
+    //     setData(json);
+    //   }
+  
+    //   fetchData();
+    // }, []);
+  
+  
+      fetch(url)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -25,7 +41,7 @@ function App() {
         setDescription(data.weather[0].description);
         setMessage("");
       })
-      .catch((error) => setMessage("Invalid location"));
+      .catch((error) => setMessage("Invalid information"));
   };
 
   const handleChange = (e) => {

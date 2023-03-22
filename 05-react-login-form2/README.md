@@ -33,6 +33,10 @@ So, **event.target.value** retrieves the value of that element (an input field, 
 In React, events are SynthenticEvent, a wrapper around the browser’s native event. It has the same interface as the browser’s native event, including stopPropagation() and preventDefault(), except the events work identically across all browsers.
 [stakeoverflow](https://stackoverflow.com/questions/67014481/what-is-event-target-value-in-react-exactly)
 
+event.target is a property of the Event object that is passed as an argument to the event listener function. It returns a reference to the DOM element that the event originated from.
+
+So, event.target is an object in the DOM, specifically a reference to the element that triggered the event.
+
 
 ## 3. SyntheticEvent 
 ( React documents )[https://reactjs.org/docs/events.html]
