@@ -5,7 +5,7 @@
 
   const fetchWeather = () => {
     const url = `${API.base}q=${location}&units=metric&appid=${API.Key}`;
-    // const url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=metric&appid=${APIKey}`;
+
     fetch(url)
       .then((res) => res.json())
       .then((data) => {
