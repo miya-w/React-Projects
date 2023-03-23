@@ -90,7 +90,3 @@ In this example, the useEffect hook is used to fetch data from an API using the 
 - [How to Hide Your API Keys](https://betterprogramming.pub/how-to-hide-your-api-keys-c2b952bc07e6)
 
 - [【React.js 入門 - 15】 使用 Http request - Fetch Api](https://ithelp.ithome.com.tw/articles/10221020?sc=rss.iron)
-
-- ** useEffect **
-- [七、useEffect()：副作用钩子](https://www.ruanyifeng.com/blog/2019/09/react-hooks.html)
-- [一份完整的useEffect指南](https://xiaohesong.gitbook.io/today-i-learn/front-end/react-1/overreact/yi-fen-wan-zheng-de-useeffect-zhi-nan)
