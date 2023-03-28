@@ -36,7 +36,23 @@
           )}
 ```
 The React Code
+
 ```javascript
+// ToDoItem.js 
+function ToDoItem(props) {
+  return (
+    <div
+      onClick={() => {
+        props.onChecked(props.id);
+      }}
+    >
+      <li>{props.text}</li>
+    </div>
+  );
+}
+
+export default ToDoItem;
+// App.js
 import React, { useState } from "react";
 import ToDoItem from "./ToDoItem";
 
@@ -120,8 +136,21 @@ You can then use this newArray array in your React component and access the inde
   ))}
 </ul>
 ```
-Note that we're using the key property to set a unique identifier for each list item. This is important for React to efficiently update the list when the array changes. In this case, we're using the id property as the key since it's unique for each item. However, it's generally recommended to use a stable identifier (e.g. a unique ID from your data) as the key if possible.
----
+### filter()method
+```javascript
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// Filter even numbers with index greater than 3
+const filteredNumbers = numbers.filter((number, index) => {
+  return number % 2 === 0 && index > 3;
+});
+
+console.log(filteredNumbers); // Output: [6, 8]
+```
+
+- Note that we're using the key property to set a unique identifier for each list item. This is important for React to efficiently update the list when the array changes. In this case, we're using the id property as the key since it's unique for each item. However, it's generally recommended to use a stable identifier (e.g. a unique ID from your data) as the key if possible.
+
+
 ## Getting Started with Create React App
 ```
 npm start -  Starts the development server.
