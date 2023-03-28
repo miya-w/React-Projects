@@ -64,6 +64,26 @@ Destructuring is a way to extract values from arrays or objects and assign them 
 
 In this specific case, the code is using object destructuring to extract two properties, value and name, from the event.target object. By enclosing value and name in curly braces {} on the left-hand side of the assignment operator =, we are telling JavaScript to create two new variables, value and name, and assign them the values of the value and name properties of the event.target object, respectively. The value and name variables are now available for use in the rest of the code block.
 
+```javascript
+function handleChange(event) {
+    const { name, value } = event.target;
+
+    setContact(prevValue => {
+      return {
+        ...prevValue,
+        [name]: value
+      };
+    });
+  }
+```
+
+```javascript
+//In ES6, you can do like this.
+var key = "name";
+var person = {[key]:"John"}; // same as var person = {"name" : "John"}
+console.log(person); // should print  Object { name="John"}
+```
+- [JavaScript set object key by variable](https://stackoverflow.com/questions/11508463/javascript-set-object-key-by-variable)
 ### Getting Started with Create React App
 ```
 npm start -  Starts the development server.

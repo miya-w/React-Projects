@@ -28,7 +28,11 @@
 ## 3.Delete function
 ```javascript
  {items.map((todoItem, index)=> (            
-          < ToDoItem key = {index} id={index} text={todoItem} onChecked={deleteItem()}/>)
+          < ToDoItem 
+          key = {index} 
+          id={index} 
+          text={todoItem} 
+          onChecked={deleteItem()}/>)
           )}
 ```
 The React Code
@@ -89,9 +93,34 @@ function App() {
 
 export default App;
 ```
+### How to To add an index to an array in React
+To add an index to an array in React JavaScript, you can use the map() function to loop through the array and return a new array with the desired index added to each element. You can use the index parameter provided by map() to add the index to each element.
 
+Here is an example of how to add an index to an array in React JavaScript:
+```javascript
+const myArray = ["apple", "banana", "orange"];
 
+const newArray = myArray.map((item, index) => {
+  return {
+    id: index,
+    value: item
+  }
+});
 
+console.log(newArray);
+```
+In this example, we use the map() function to loop through the myArray array and create a new array called newArray. For each element in the myArray array, we create a new object with the id set to the index and the value set to the current element. The newArray array will contain objects with the index and the value for each element in the myArray array.
+
+You can then use this newArray array in your React component and access the index of each element using the id property. For example, if you wanted to render a list of items with the index displayed, you could do something like this:
+
+```javascript
+<ul>
+  {newArray.map((item) => (
+    <li key={item.id}>{item.id}: {item.value}</li>
+  ))}
+</ul>
+```
+Note that we're using the key property to set a unique identifier for each list item. This is important for React to efficiently update the list when the array changes. In this case, we're using the id property as the key since it's unique for each item. However, it's generally recommended to use a stable identifier (e.g. a unique ID from your data) as the key if possible.
 ---
 ## Getting Started with Create React App
 ```

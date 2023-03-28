@@ -83,3 +83,91 @@ const App = () => {
 
 export default App
 ```
+
+
+
+```javascript
+// product
+
+import { useParams, Link } from 'react-router-dom'
+
+import { products } from '../Products'
+
+const Product = () => {
+  let params = useParams()
+
+  const product = products.find((product) => product.id === params.productID)
+
+  // console.log(product)
+
+  return (
+    <>
+      <div style={{ marginBottom: 20 }}>
+        <h2>{product.name}</h2>
+        <p>{product.description}</p>
+        <span>$ {product.price}</span>
+      </div>
+      <Link to="/products">Back to products</Link>
+    </>
+  )
+}
+
+export default Product
+
+```
+
+```javascript
+// Products
+// import { Link,Outlet} from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
+const Products = () => {
+  return (
+    <>
+      <h1>Flowers Shop</h1>
+      {/* <ul>
+        {products.map(({ id, name }) => {
+          return (
+            <li key={id}>
+              <Link to={`/products/${id}`}>{name}</Link>
+            </li>
+          )
+        })}
+      </ul>
+      <Outlet /> */}
+      <ul>
+        {products.map(({ id, name }) => (
+          <li key={id}>
+            <Link to={`/product/${id}`}>{name}</Link>
+          </li>
+        ))}
+      </ul>
+    </>
+  )
+}
+
+export default Products
+
+export const products = [
+  {
+    id: '573489278',
+    name: 'Congratulations Bouquet',
+    price: 70,
+    description:
+      'The perfect bouquet for a celebration such as a birthday or graduation.',
+  },
+  {
+    id: '167489003',
+    name: 'Apology Bouquet',
+    price: 150,
+    description: 'You need something extra when you know you messed up.',
+  },
+  {
+    id: '234359850',
+    name: 'Wedding Bouquet',
+    price: 200,
+    description:
+      'Beautiful collection of flowers to turn heads on your special day!',
+  },
+]
+```

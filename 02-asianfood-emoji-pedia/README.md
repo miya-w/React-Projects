@@ -32,15 +32,106 @@ ReactDOM.render(myelement, document.getElementById('root'));
 ---
 **map( ) method**
 
-```
+```javascript
 const numbers = [1, 2, 3, 4, 5];`
 const numberMap = numbers.map((number) => number );
 console.log(numberMap);`
-```
+
 //print : 2.a30c0c16.chunk.js:1 (5) [1, 2, 3, 4, 5]
+```
+
+
+## The process - using props
+- [React 元件 (Components) | Props](https://www.fooish.com/reactjs/components-and-props.html)
+[Code source](https://codesandbox.io/s/the-process-of-props-1ydn4x)
+```javascript
+// --- final Version: using Props and map()method --- 
+
+var names = ["Sara", "David", "William", "Olivia"];
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      {names.map((eachName) => (
+        <Welcome name={eachName} />
+      ))}
+    </div>
+  );
+}
+
+export default App;
 
 
 
+// var names = ["Sara", "David", "Willian", "Olivia"];
+
+// function Welcome(props) {
+//   return <h1>Hello, {props.name}</h1>;
+// }
+
+// function App() {
+//   return (
+//     <div>
+//       {names.map((EachName) => {
+//         <Welcome Name={EachName.Name} />;
+//       })}
+//     </div>
+//   );
+// }
+
+// export default App;
+// Code fix: Changed EachName.Name to eachName inside the map() function.
+// This is because we're iterating through an array of strings, not objects with a "Name" property.
+
+
+// --- version2: Using Props ---
+
+function Welcome(props) {
+  return <h1>Hello, {props.name}</h1>;
+}
+
+function App() {
+  return (
+    <div>
+      <Welcome name="Sara" />
+      <Welcome name="David" />
+      <Welcome name="Willan" />
+      <Welcome name="Olivia" />
+    </div>
+  );
+}
+
+export default App;
+
+// --- version 1: no Props no Map() ---
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello, Sarah</h1>
+      <h1>Hello, David</h1>
+      <h1>Hello, Willan</h1>
+      <h1>Hello, Olivia</h1>
+    </div>
+  );
+}
+
+export default App;
+
+// ---Map() method ---
+
+var items = ["vegi", "milk", "potato"];
+
+var newItems = items.map((item) => {
+  return item;
+});
+console.log(newItems);
+
+//OutPut : ▶(3) ["vegi", "milk", "potato"]
+```
 
 ---
 # Getting Started with React App
