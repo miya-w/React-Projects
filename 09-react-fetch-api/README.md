@@ -79,7 +79,6 @@ function MyComponent() {
 In this example, the useEffect hook is used to fetch data from an API using the fetch function. The setData function is called to update the data state variable with the JSON data returned from the API. The empty dependencies array tells React to run the callback function only once after the initial render.
 
 ### Fetch Api & env
-- [Open weather API](https://api.openweathermap.org/data/2.5/weather?q=melbourne&units=metric&appid=3917f3a764d0394f234b9a09d3463ef4)
 - [ReactJS Tutorial - Live Weather App (OpenWeather Free API)](https://www.youtube.com/watch?v=_Hhg7NmmN-c&t=306s)
 - [GitHub - ReactJS_Weather_App/src/App.js ](https://github.com/davidrazmadzeExtra/ReactJS_Weather_App/blob/main/src/App.js)
 - [Using DOTENV to hide Api Key in React JS ](https://www.youtube.com/watch?v=3RgpuNR9JI8)

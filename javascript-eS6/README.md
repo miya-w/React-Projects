@@ -579,4 +579,37 @@ export default FunctionalComponent;
 - [ES6 Tutorials : SPREAD Operator with Fun](https://www.codingame.com/playgrounds/7998/es6-tutorials-spread-operator-with-fun)
 
 
+Code needs to figureOut (film-ii) 
+```javascript
+function SelectYear({ handleChangeYear }) {
+    const startYear = 2010
+    const endYear = 2022
+    // const years = []
+    // //generate year
+    // for (let year = startYear; year <= endYear; year++) {
+    //   years.push(year)
+    // }
 
+    const years = Array.from({ length: endYear - startYear + 1 }, (_, index) => startYear + index)
+ 
+  
+    return (
+      <select
+        className="year-select"
+        onChange={(event) => handleChangeYear(event.target.value)}
+      >
+        <option className="year-option" value="">
+          Select a year
+        </option>
+        {years.map((year) => (
+          <option className="year-option" key={year} value={year}>
+            {year}
+          </option>
+        ))}
+      </select>
+    )
+  }
+
+
+
+```

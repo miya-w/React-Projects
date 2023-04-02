@@ -1,5 +1,5 @@
 // import { useState } from "react";
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 // const APIKey = "3917f3a764d0394f234b9a09d3463ef4";
 // https://api.openweathermap.org/data/2.5/weather?q=melbourne&units=metric&appid=3917f3a764d0394f234b9a09d3463ef4
@@ -9,8 +9,6 @@ const API = {
     base:"https://api.openweathermap.org/data/2.5/weather?",
     key : process.env.REACT_APP_OPEN_WEATHER_API_KEY
 }  
-
-
 function App() {
   const [description, setDescription] = useState();
   const [temp, setTemp] = useState();
@@ -18,7 +16,7 @@ function App() {
   const [message, setMessage] = useState();
 
     const fetchWeather = () => {
-      const url = `${API.base}q=${location}&units=metric&appid=${API.Key}`;
+      const url = `${API.base}q=${location}&units=metric&appid=${API.key}`;
   
       fetch(url)
         .then((res) => res.json())
