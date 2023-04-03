@@ -2,65 +2,58 @@
 
 ### 1.How to Install React Router
  - npm install react-router-dom@6
-### 2. Set Up React Router
+### 2. Set Up React Router 
+A < BrowserRouter > stores the current location in the browser's address bar using clean URLs and navigates using the browser's built-in history stack.
 - import { BrowserRouter } from "react-router-dom";
-- < BrowserRouter>
+- < BrowserRouter> [`<BrowserRouter>`](https://reactrouter.com/en/main/router-components/browser-router)
 
-```javascript
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { BrowserRouter } from "react-router-dom";
-
-ReactDOM.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
-  document.getElementById("root")
-);
-```
 ### 3.Route to Other Components
+`< Routes >`
+Rendered anywhere in the app, < Route > will match a set of child routes from the current location.[`< Routes >`](https://reactrouter.com/en/main/components/routes)
 ```javascript
-import { Routes, Route } from "react-router-dom"
-import Home from "./Home"
-import About from "./About"
-import Contact from "./Contact"
+interface RoutesProps {
+  children?: React.ReactNode;
+  location?: Partial<Location> | string;
+}
 
-function App() {
+<Routes location>
+  <Route />
+</Routes>;
+```
+### Step 4 - Use Link to navigate to routes
+A < Link > is an element that lets the user navigate to another page by clicking or tapping on it. In react-router-dom, a <Link> renders an accessible < a > element with a real href that points to the resource it's linking to. [`<link>`](https://reactrouter.com/en/main/components/link)
+
+```javascript
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom'
+import About from '../About'
+import Contact from '../Contact'
+import HomePage from '../HomePage'
+const App = () => {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <nav>
+        <Link to="/">Home</Link>
+        {' | '}
+        <Link to="/about">About</Link>
+        {' | '}
+        <Link to="/contact">Contact</Link>
+      </nav>
+
       <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="about" element={ <About/> } />
-        <Route path="contact" element={ <Contact/> } />
+        <Route path="*" element={<p>page not exist</p>} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </div>
+    </BrowserRouter>
   )
 }
 
-
-
 export default App
+
 ```
 
-### Step 4 - Use Link to navigate to routes
 
-```javascript
-import { Link } from "react-router-dom";
-
-function Home() {
-  return (
-    <div>
-      <h1>This is the home page</h1>
-      <Link to="about">Click to view our about page</Link>
-      <Link to="contact">Click to view our contact page</Link>
-    </div>
-  );
-}
-
-export default Home;
-```
 
 ```javascript
 
@@ -238,3 +231,14 @@ export const products = [
 - [React Router Version 6 Tutorial – How to Set Up Router and Route to Other Components](https://www.freecodecamp.org/news/how-to-use-react-router-version-6/)
 - [React Router documentation](https://reactrouter.com/en/6.10.0)
 - [React Router-`<Link>`](https://reactrouter.com/en/main/components/link)
+
+
+
+
+### Nesting routes with <Outlet/>
+< Outlet /> behaves a bit like props.children in standard React. <Outlet /> is the placeholder location for where the nested children routes will be rendered.
+
+
+---
+### Resources
+-[How to Use Nested Routes in React Router 6](https://dev.to/tywenk/how-to-use-nested-routes-in-react-router-6-4jhd)
