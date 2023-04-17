@@ -144,10 +144,11 @@ console.log(newItems);
 //OutPut : ▶(3) ["vegi", "milk", "potato"]
 ```
 
-## The Process of using Props
+##Example:  The Process of using Props
 
 ```javascript
-// 1. Creaye the Conttacts Without Props
+// 1. -----------------------------
+//Create the Contacts Without Props
 function App() {
   return (
     <div>
@@ -166,9 +167,8 @@ function App() {
   );
 }
 
-//---------------------------
-
-// 2. Pack all the information into Card Function
+//2.---------------------------
+//  Pack all the information into Card Function
 function Card() {
   return (
     <div>
@@ -187,7 +187,7 @@ function App() {
   );
 }
 
-// 3.
+// 3.------------------------------
 // Using Props, so the props can be brought as the attributes to the Card function
 
 function Card(Props) {
@@ -217,7 +217,8 @@ function App() {
   );
 }
 
-// 4. Pack all the contacts into a array
+// 4. ------------------------------
+// Pack all the contacts into a array
 
 function Card(Props) {
   console.log(Props);
@@ -283,7 +284,8 @@ const contacts = [
   },
 ];
 
-// 5. Map(), create the CreateCard function to run each item in a array
+// 5.-------------------------------------
+// Map(), create the CreateCard function to run each item in a array
 
 function Card(Props) {
   console.log(Props);
@@ -312,7 +314,8 @@ function App() {
   return <div>{contacts.map(CreateCard)}</div>;
 }
 
-// 6. Simplfy the code inside  the map() method by using the arrow function
+// 6.---------------------------------------
+// Simplfy the code inside  the map() method by using the arrow function
 
 function Card(Props) {
   console.log(Props);
@@ -341,7 +344,8 @@ function App() {
   );
 }
 
-// 7. Destructuring Props in React
+// 7.------------------------------- 
+// Destructuring Props in React
 const Card = ({ name, phone, email }) => {
   return (
     <div>
@@ -371,7 +375,9 @@ function App() {
 
 
 ```
-- [CodeSandBox- Props and Destructuring Props in React](https://codesandbox.io/s/props-and-destructure-lzw2xc?file=/src/App.js:873-1115)
+### Resources
+- [Play this code- CodeSandBox Props and Destructuring Props in React](https://codesandbox.io/s/props-and-destructure-lzw2xc?file=/src/App.js:873-1115)
+### Destructuring Props
 - [Destructuring Props in React](https://medium.com/@lcriswell/destructuring-props-in-react-b1c295005ce0)
 - [React: How To Destructure Props (Quick Tutorial)](https://www.youtube.com/watch?v=7mlNBuIAtFY)
 - [Is it Good to Destructure Props in React?](https://wonderdevelop.com/destructure-props-react/)
