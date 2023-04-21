@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+
+/* navbar */
+nav {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 10px 30px 10px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color:bisque
+}
+
+/* .container{
+  max-width: 1200px;
+} */
+
+.product-container{
+
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+  /* grid-template-columns: fr fr fr fr; */
+  margin-top: 50px;
+}
+
+
+.product-div{
+  border: #282c34 solid;
+  width: 250px;
+  height: 250px;
+}
