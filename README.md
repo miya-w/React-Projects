@@ -11,7 +11,7 @@
 #props #map()method
 
 ## 3. React Count App Project [roject Link](https://github.com/miya-w/React-Projects/tree/main/03-react-count-app)
-![count-app](https://github.com/miya-w/React-Projects/blob/main/03-react-count-app/imgs/count-app.png)
+![count-app](https://github.com/miya-w/React-Projects/blob/main/18-react-redux-counter-app/images/redux-counter-app.png)
 #Hooks-useState 
 
 ## 4. React LogIn form [roject Link](https://github.com/miya-w/React-Projects/tree/main/04-react-login-form)
