@@ -10,7 +10,7 @@ function Nav(){
     // console.log(item)
     // console.log(CartContext)
 
-    const {items} = useContext(CartContext)
+    const {cartItems} = useContext(CartContext)
     return(
         <nav>
             <Link to={"/"}>
@@ -19,7 +19,7 @@ function Nav(){
             <Link to={"/checkout"}>
                 <div className="cart">
                     <p>Cart</p>
-                    <span>({items.length})</span>
+                    <span>({cartItems.length})</span>
                 </div>
             </Link>
         </nav>

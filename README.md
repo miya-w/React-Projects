@@ -1,6 +1,6 @@
 # React-Projects
 ---
-**This repository record the learning journey of React step by step.**
+**This repository documents the step-by-step learning journey of React.**
 
 ## 1. Hello React project[Project Link](https://github.com/miya-w/React-Projects/tree/main/01-hello-react)
 
@@ -25,6 +25,10 @@
 ## 6. Shopping list [roject Link](https://github.com/miya-w/React-Projects/tree/main/06-react-shopping-list)
 ![shopping-list](https://github.com/miya-w/React-Projects/blob/main/06-react-shopping-list/imgs/shoppinglist02.png)
 #CRUD 
+
+## 18. Redux counter [roject Link](https://github.com/miya-w/React-Projects/tree/main/18-react-redux-counter-app)
+
+![Counter-app](https://github.com/miya-w/React-Projects/blob/main/18-react-redux-counter-app/imgs/redux-counter-app.png)
 
 
 ## Resources

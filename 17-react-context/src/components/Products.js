@@ -7,12 +7,12 @@ import Card from "./Card";
 
 function Products(){
     const products=[
-        {name: "Vest", price:"50"},
-        {name: "Jean", price:"200"},
-        {name: "Jacket", price:"150"},
-        {name: "T-Shirt", price:"20"},
-        {name: "Jumper", price:"100"},
-        {name: "Beannie", price:"20"}
+        {id:"1",name: "Vest", price:"50"},
+        {id:"2",name: "Jean", price:"200"},
+        {id:"3",name: "Jacket", price:"150"},
+        {id:"4",name: "T-Shirt", price:"20"},
+        {id:"5",name: "Jumper", price:"100"},
+        {id:"6",name: "Beannie", price:"20"}
     ];
 
 
@@ -24,6 +24,7 @@ function Products(){
                 <div className="product-container">
                 {products.map((product)=>(
                     <Card 
+                        key={product.id}
                         name={product.name}
                         price={product.price}
                     />
